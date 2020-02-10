@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:keepScreenOn="false"
-            app:srcCompat="@drawable/nike_logo" />
+            app:srcCompat="@drawable/nike_grey_logo" />
 
         <TextView
             android:id="@+id/textView15"
@@ -28,7 +28,7 @@
             android:layout_gravity="center"
             android:fontFamily="@font/francois_one"
             android:text="WE DARE TO DESIGN THE FUTURE OF SPORT"
-            android:textColor="#817777"
+            android:textColor="#777881"
             android:textSize="20sp" />
 
 
