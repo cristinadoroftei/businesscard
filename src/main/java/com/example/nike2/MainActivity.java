@@ -24,8 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-
     //react to clicks on the nav bar
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
