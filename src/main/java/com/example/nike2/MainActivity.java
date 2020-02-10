@@ -3,6 +3,7 @@ package com.example.nike2;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
@@ -42,7 +43,11 @@ public class MainActivity extends AppCompatActivity {
                             selectedFragment = new ContactFragment();
                             break;
                     }
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
+                    FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                    transaction.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
+                    transaction.replace(R.id.fragment_container, selectedFragment);
+//                    transaction.addToBackStack(tag);
+                    transaction.commit();
                     return true;
                 }
             };
